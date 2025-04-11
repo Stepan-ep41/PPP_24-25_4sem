@@ -86,7 +86,7 @@ class client:
 
 
 if __name__ == '__main__':
-    HOST = 'localhost'
-    PORT = 12345
+    HOST = input('Введите хост: ')
+    PORT = int(input('Введите порт: '))
     c = client(HOST=HOST, PORT=PORT, protocol_handler=size_snd_rcv_protocol())
     c.run()

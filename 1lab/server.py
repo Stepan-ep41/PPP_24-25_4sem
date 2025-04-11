@@ -108,7 +108,7 @@ class server:
     
 
 if __name__ == '__main__':
-    HOST = 'localhost'
-    PORT = 12345
+    HOST = input('Введите хост: ')
+    PORT = int(input('Введите порт: '))
     s = server(HOST=HOST, PORT=PORT, protocol_handler=size_snd_rcv_protocol())
     s.run()
